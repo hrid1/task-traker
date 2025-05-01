@@ -54,6 +54,7 @@ const getAllProjects = async (req, res) => {
 
 // delete Projects
 const deleteProject = async (req, res) => {
+  console.log("delete this");
   try {
     const project = await Project.findOneAndDelete({
       _id: req.params.id,

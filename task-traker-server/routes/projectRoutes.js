@@ -10,6 +10,6 @@ const authMiddleware = require("../middleware/auth");
 
 router.post("/", authMiddleware, createProject);
 router.get("/", authMiddleware, getAllProjects);
-router.get("/:pid", authMiddleware, deleteProject);
+router.delete("/:id", authMiddleware, deleteProject);
 
 module.exports = router;
