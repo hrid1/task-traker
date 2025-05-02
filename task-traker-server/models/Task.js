@@ -15,7 +15,7 @@ const taskSchema = new mongoose.Schema({
     default: "pending",
   },
   createdAt: {
-    type: Date,
+  type: Date,
     default: Date.now,
   },
   completedAt: {type: Date},

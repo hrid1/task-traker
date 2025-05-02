@@ -6,6 +6,7 @@ require("dotenv").config();
 
 const authRoutes = require("./routes/authRoutes")
 const projectRoutes = require("./routes/projectRoutes")
+const taskRoutes = require("./routes/taskRoutes")
 
 const app = express();
 // middleware
@@ -20,6 +21,7 @@ connectDB();
 // routes
 app.use("/api/auth", authRoutes)
 app.use("/api/project", projectRoutes)
+app.use("/api/task", taskRoutes )
 
 
 app.get("/", (req, res) => {

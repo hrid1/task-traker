@@ -6,6 +6,7 @@ const {
   getAllProjects,
   deleteProject,
 } = require("../controllers/project");
+
 const authMiddleware = require("../middleware/auth");
 
 router.post("/", authMiddleware, createProject);
